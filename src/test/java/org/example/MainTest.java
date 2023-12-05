@@ -9,4 +9,11 @@ public class MainTest {
         int result = calculator.add(2, 3);
         assertEquals(5, result);
     }
+
+    @Test
+    void testInvalidIO() {
+        Calculator calculator = new Calculator();
+        char result = calculator.invalidIO('a', 'b');
+        assertEquals('a',result);
+    }
 }
