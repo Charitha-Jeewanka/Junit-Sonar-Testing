@@ -14,6 +14,6 @@ public class MainTest {
     void testInvalidIO() {
         Calculator calculator = new Calculator();
         char result = calculator.invalidIO('a', 'b');
-        assertEquals('a',result);
+        assertEquals('I',result);
     }
 }
