@@ -11,6 +11,14 @@ public class MainTest {
     }
 
     @Test
+    void testSubtraction(){
+        Calculator calculator = new Calculator();
+        int result = calculator.sub(5,2);
+        assertEquals(3, result);
+    }
+
+
+    @Test
     void testInvalidIO() {
         Calculator calculator = new Calculator();
         char result = calculator.invalidIO('a', 'b');
